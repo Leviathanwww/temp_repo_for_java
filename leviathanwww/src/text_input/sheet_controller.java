@@ -6,7 +6,7 @@ import java.util.Set;
 
 import text_input.textbox_input;
 
-public class test_input {
+public class sheet_controller {
 	//Implementing multiple Windows.
 	private HashMap<String, textbox_input> windows = new HashMap<String, textbox_input>();
 
@@ -16,7 +16,7 @@ public class test_input {
 		 */
 		textbox_input sheet = new textbox_input(Title);
 		this.windows.put(Title, sheet);
-		System.out.println(Title + "added");
+		System.out.println(Title + " added");
 	}
 	
 	public void showAllWindows() {
@@ -31,10 +31,17 @@ public class test_input {
 	}
 	
 	public textbox_input getWindows(String Title) {
+		/**
+		 * to get the private property ---- Title.
+		 */
 		return this.windows.get(Title);
 	}
 	
 	public void deleteWindows(String Title) {
+		/**
+		 * There is only one feature that has been implemented, 
+		 * deletion of the end.
+		 */
 		this.windows.remove(Title);
 		System.out.println("Delete successfully");
 	}

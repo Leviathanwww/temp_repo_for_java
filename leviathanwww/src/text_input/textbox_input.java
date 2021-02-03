@@ -75,6 +75,11 @@ public class textbox_input {
 	}
 	
 	public void mainFunc() {
+		/**
+		 * The situation is slightly different.
+		 * Because of the calling relationship,
+		 * the main function has to be separated out.
+		 */
 		Scanner in = new Scanner(System.in);
 		System.out.println("welcome to the textinput program!\n"
 				+ "Title: " + this.title + "\n"
@@ -88,14 +93,18 @@ public class textbox_input {
 		while(!key_input.equals("5")) {
 			if(key_input.equals("1")) {
 				System.out.println("now editing...--->");
+				//Implement multi-line input, identifier stop.
 				String text_in = in.nextLine();
 				while(!text_in.equals("#quit")) {
 					this.addSingleLine(text_in);
+					text_in = in.nextLine();
 				}
 				System.out.println("ended.");
 			}
 			else if(key_input.equals("2")) {
-				System.out.println(this.returnLine(in.nextInt()));
+				System.out.println("enter the number of row.");
+				int rowNumber = in.nextInt();
+				System.out.println(this.returnLine(rowNumber));
 			}
 			else if(key_input.equals("3")) {
 				System.out.println(this.index);
