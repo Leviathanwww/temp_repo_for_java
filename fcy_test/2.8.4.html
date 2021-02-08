@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>简易ATM</title>
+		<script>
+			var balance = 100;
+			var n;
+			do {
+				n = parseInt(prompt('1.存钱；\n2.取钱；\n3.查询余额；\n4.退出系统'));
+				switch(n) {
+					case 1:
+					balance += parseInt(prompt('请输入存钱金额'));
+					alert('存钱成功');
+					break;
+					case 2:
+					balance -= parseInt(prompt('请输入取走金额'));
+					alert('取钱成功');
+					break;
+					case 3:
+					alert('您的余额：' + balance);
+					break;
+				}
+			}while( n>=1 && n<=3 );
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
