@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>对象创建</title>
+		<script>
+			//电脑对象
+			function computer(color, weight, brand, type){
+				this.color = color;
+				this.weight = weight;
+				this.brand = brand;
+				this.type = type;
+				this.watchFilm = function() {}
+				this.listenMusic = function() {}
+				this.typeCode = function(){}
+ 			}
+			var fcy = new computer('yellow', 40, 'dell', 'windows64');
+			console.log(fcy.color, fcy.weight);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

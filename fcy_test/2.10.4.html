@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数调用判断该年二月份多少天</title>
+		<script>
+			//判断该年是否为闰年
+			function isRunYear(year){
+				var flag;
+				if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+					flag = true;
+				}else {
+					flag = false;
+				}
+				return flag;
+			}
+			//判断二月多少天
+			function backDay(year){
+				if (isRunYear(year)){
+					alert('该年二月有29天,是闰年');
+				}else {
+					alert('该年二月有28天，是平年');
+				}
+			}
+			var year = prompt('请输入年份');
+			backDay(year);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

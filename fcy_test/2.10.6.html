@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>简易计算器</title>
+		<script>
+			//加法
+			function add(a, b) {
+				return a + b;
+			}
+			//减法
+			function sub(a, b) {
+				return a - b;
+			}
+			//乘法
+			function mul(a, b) {
+				return a * b;
+			}
+			//除法
+			function div(a, b) {
+				return a / b;
+			}
+			do {
+				var n = prompt('欢迎使用简易计算器：\n1.加法运算;\n2.减法运算;\n3.乘法运算;\n4.除法运算;\n5.退出;\n请输入您的选项：');
+				if(n == 5) {
+					break;
+				}
+				var a = parseInt(prompt('请输入第一个数'));
+				var b = parseInt(prompt('请输入第二个数'));
+				var result;
+				switch(parseInt(n)) {
+					case 1:
+					result = add(a, b);
+					break;
+					case 2:
+					result = sub(a, b);
+					break;
+					case 3:
+					result = mul(a, b);
+					break;
+					case 4:
+					result = div(a, b);
+					break;
+				}
+				alert(result);
+			} while(true);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
