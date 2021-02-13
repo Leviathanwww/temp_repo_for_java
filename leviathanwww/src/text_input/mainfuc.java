@@ -27,7 +27,7 @@ public class mainfuc {
 		sheet_controller workspace  = new sheet_controller();
 		Scanner in = new Scanner(System.in);
 		showSlogen();
-		String key_input = in.nextLine();
+		String key_input = in.nextLine();  
 		while(!key_input.equals("5")) {
 			if(key_input.equals("1")) {
 				System.out.println("(CREATE)enter the Title of the text.");
