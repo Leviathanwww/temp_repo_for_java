@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<script>
-		var balance = 100;
-		var n;
-		do {
-			n = parseInt(prompt('1.存钱；\n2.取钱；\n3.查询余额；\n4.退出系统'));
-			switch(n) {
-				case 1:
-				balance += parseInt(prompt('请输入存钱金额'));
-				alert('存钱成功');
-				break;
-				case 2:
-				balance -= parseInt(prompt('请输入取走金额'));
-				alert('取钱成功');
-				break;
-				case 3:
-				alert('您的余额：' + balance);
-				break;
-			}
-		}while( n>=1 && n<=3 );
-	</script>
-	<body>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<fieldset>
+  <legend>What is your favorite meal?</legend>
+  <ul>
+    <li>
+      <label for="soup">Soup</label>
+      <input type="radio" checked id="soup" name="meal" value="soup">
+    </li>
+    <li>
+      <label for="curry">Curry</label>
+      <input type="radio" id="curry" name="meal" value="curry">
+    </li>
+    <li>
+      <label for="pizza">Pizza</label>
+      <input type="radio" id="pizza" name="meal" value="pizza">
+    </li>
+  </ul>
+</fieldset>
+</body>
 </html>

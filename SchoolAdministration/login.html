@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>拼车小项目</title>
+		<link href="css/pinche.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div class="user_login" align="center">
+			<h3>用户登陆</h3>
+			<div class="content">
+				<form method="post" action="">
+					<div class="Role_Selection">
+						<p>角色
+						<select name="选择角色">
+							<option value="学生">学生</option>
+							<option value="老师">老师</option>
+							<option value="管理员">管理员</option>
+						</select>
+						</p>
+					</div>
+					<div class="frm_cont userName">
+						<lable for="userNmae">用户名:</lable>
+						<input type="text" id="userName"/>
+					</div><br/>
+					<div class="frm_cont userPsw">
+						<lable for="userPsw">密   码:</lable>
+						<input type="text" id="userPsw"/>
+					</div><br/>
+					<div class="frm_cont validate">
+						<lable for="validate">验证码:</lable>
+						<input type="text" id="validate"/>
+						
+					</div><br/>
+					<div class="frm_content keepLogin">
+						<input type="checkbox" id="keepLogin"/>
+						<lable for="KeepLogin">请记住我的登陆信息</lable>
+					</div><br/>
+					<div class="btns">
+						<button type="submit" class="btn_login">登录</button>
+						<a href="registration.html" class="reg">用户注册</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
